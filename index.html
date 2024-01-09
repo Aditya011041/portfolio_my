@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1086de3bb3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/a.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header"> Home </a></li>
+            <li><a href="#about"> About </a></li>
+            <li><a href="#services"> Services </a></li>
+            <li><a href="#portfolio"> Portfolio </a></li>
+            <li><a href="#contact"> Contact </a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars custom-class" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Designer</p>
+          <h1>Hey! it's me <span>Aditya</span></h1>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------about----------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/users.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              I am a web developer with expertise in developing chat
+              applications and car games. Constantly driven by my enthusiasm for
+              learning, I actively seek opportunities to expand my knowledge and
+              skills in web development. Beyond coding, I am a dedicated singer,
+              finding joy in expressing myself through music. I am deeply
+              passionate about honing my craft and spend ample time delving into
+              new development concepts. Collaboration is key to my approach, as
+              I believe in working together to create innovative and impactful
+              solutions. Let's join forces and embark on a journey of creativity
+              and growth, shaping remarkable digital experiences.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Front-End Developer</span><br />Designing web pages
+                </li>
+                <li><span>Coding</span><br />Coding in C++</li>
+                <li><span>Computer Vision</span><br />Image Processing</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Journey</span><br />To be started</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2024</span><br />B.Tech</li>
+                <li><span>2023</span><br />Web Dev.</li>
+                <li><span>2023</span><br />Image Processing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------services-------------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Designing web pages,creating chat-apps,designing html/css/js
+              websites along with responsive as a feature.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>Creating web apps with many different trending feautres.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-robot"></i>
+            <h2>Computer vision</h2>
+            <p>Projects related to image processing.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------Portfolio------------------ -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Open Books Library</h3>
+              <p>The site makes you explore your favourite creations!</p>
+              <a href="https://adityalibrary.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>Know the miracle of LORD INDRA</p>
+              <a href="https://myweather29.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Food App</h3>
+              <p>The app makes you feel closer to your beloved ones!</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work additional-work hidden">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Food App</h3>
+              <p>The app makes you feel closer to your beloved ones!</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          
+          
+          
+        </div>
+        <div class="container">
+          
+        </div>
+        <a class="btn see-more" href="#">See More</a>
+        <a class="btn see-less hidden" href="#">See Less</a>
+
+      </div>
+    </div>
+
+    <!-- ------------------contact-------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p>
+              <a href="mailto:aditya.ece.20043@iiitbh.ac.in"
+                ><i class="fa-brands fa-telegram"></i
+                >aditya.ece.20043@iiitbh.ac.in</a
+              >
+            </p>
+            <p>
+              <a href="tel:1234567819"
+                ><i class="fa-solid fa-square-phone"></i>1234567819</a
+              >
+            </p>
+            <div class="social-icons">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="new">
+              <a href="/images/New_resume.pdf" download class="btn btn1"
+              >Download CV</a
+            >
+            </div>
+            
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Made by Aditya Vatsa
+          <i class="fa-sharp fa-solid fa-heart"></i>
+        </p>
+      </div>
+    </div>
+   
+<script>
+var seeMoreButton = document.querySelector("#portfolio .see-more");
+var seeLessButton = document.querySelector("#portfolio .see-less");
+var additionalWorks = document.querySelectorAll("#portfolio .additional-work");
+
+// Initially hide the "See Less" button
+seeLessButton.style.display = "none";
+
+seeMoreButton.addEventListener("click", function(event) {
+  event.preventDefault(); // Prevent the default scroll-to-top behavior
+
+  for (var i = 0; i < additionalWorks.length; i++) {
+    additionalWorks[i].style.display = "flex"; // Display the additional works
+  }
+
+  seeMoreButton.style.display = "none"; // Hide the "See More" button
+  seeLessButton.style.display = "inline-block"; // Show the "See Less" button
+});
+
+seeLessButton.addEventListener("click", function(event) {
+  event.preventDefault(); // Prevent the default scroll-to-top behavior
+
+  for (var i = 0; i < additionalWorks.length; i++) {
+    additionalWorks[i].style.display = "none"; // Hide the additional works
+  }
+
+  seeMoreButton.style.display = "inline-block"; // Show the "See More" button
+  seeLessButton.style.display = "none"; // Hide the "See Less" button
+});
+
+
+</script>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzglATU3O1B3pRqLgmQG-hhZTbUcFcXpfRFx2K6fkYtypBJPLXKbbPD1msIf8Qm1zdRlQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
